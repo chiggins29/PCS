@@ -1,0 +1,40 @@
+/*
+*= require_self
+*= require video-js
+*/
+@import "bootstrap";
+
+
+.app-nav-conatiner {
+	background-color: #f6f6f6;
+	width: 100%;
+	margin-left: 75px;
+}
+
+.app-nav-conatiner-links li {
+	padding-right: 10px;
+}
+
+.navbar-brand {
+	font-size: 1.8em;
+	padding-top: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: #2381c4;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #2381c4;
+}
+
+.footer-text {
+	text-align: center;
+	background-color: #f6f6f6;
+	padding-top: 15px;
+}
+
+.logo-img {
+	height: 60px;
+	width: 200px;
+}

@@ -1,0 +1,40 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a href="/"><img class="navbar-brand logo-img" src="<%= asset_path( 'Logo1.png' ) %>"/></a>
+
+  <div class="collapse navbar-collapse app-nav-conatiner" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto app-nav-conatiner-links">
+
+      <li class="nav-item">
+        <a class="nav-link <%= active_link("/")%>" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= active_link("/entity")%>" href="/entity">Entity Creation</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= active_link("/tax")%>" href="/tax">Tax Service</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= active_link("/corporate-credit")%>" href="/corporate-credit">Corporate Credit</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= active_link("/reviews")%>" href="/reviews">Customer Reviews</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= active_link("/about")%>" href="/about">About Prime</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= active_link("/contact")%>" href="/contact">Contact</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>    

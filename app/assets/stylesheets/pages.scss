@@ -1,0 +1,373 @@
+ /*Carousel styles start*/
+
+.img1 {
+	width: 100%;
+	height: 500px;
+}
+ 
+.picture-text-entity {
+	color: #83be41;  
+	padding-bottom: 125px;
+}
+
+.picture-text-entity p {
+	font-size: 1.3em;
+}
+
+.entity-btn {
+	background-color: #83be41; 
+	border: none;
+}
+
+.entity-btn:hover {
+	background-color: black; 
+}
+
+
+
+.picture-text-tax {
+	color: #2381c4; 
+	padding-bottom: 125px;
+}
+
+.picture-text-tax p {
+	font-size: 1.3em;
+}
+
+.tax-btn {
+	background-color: #2381c4;
+	border: none;
+}
+
+.tax-btn:hover {
+	background-color: black;
+}
+
+
+
+.picture-text-corporate-credit {
+	color: #f7941e; 
+	padding-bottom: 125px;
+}
+
+.picture-text-corporate-credit p {
+	font-size: 1.3em;
+}
+
+.corporate-credit-btn {
+	background-color: #f7941e;
+	border: none;
+}
+
+.corporate-credit-btn:hover {
+	background-color: black;
+}
+/*carousel styles end*/
+
+
+/*Home page Styles*/
+
+.quote-text {
+	padding: 30px;
+	text-align: center;
+}
+
+.quote-btn {
+	border: none;
+  animation: colorchange 33s infinite; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 33s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+  0%   {background: #83be41;}
+  20%  {background: #2381c4;}
+  40%  {background: #f7941e;}
+  60%  {background: #83be41;}
+  80%  {background: #2381c4;}
+  100% {background: #f7941e;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #83be41;}
+  20%  {background: #2381c4;}
+  40%  {background: #f7941e;}
+  60%  {background: #83be41;}
+  80%  {background: #2381c4;}
+  100% {background: #f7941e;}
+}
+
+.tax-tips-main {
+	width: 100%;
+	background-color: #f6f6f6;
+	padding: 60px;
+}
+
+.tax-tips-text {
+	text-align: center;
+}
+
+.tax-tips-img-top {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.tax-tips-img-bottom {
+	width: 100%;
+	height: 240px;
+	margin-top: 10px;
+}
+
+.tax-tips-img-top2 {
+	width: 55%;
+	margin-bottom: 10px;
+}
+
+.review-head {
+	text-align: center;
+	width: 100%;
+	padding-top: 25px;
+}
+
+.review-body {
+	padding: 15px;
+}
+
+.review-hover:hover {
+	background-color: #f6f6f6;
+	padding: 20px;
+}
+
+/*End of Home page styles*/
+
+/*Start of entity styles*/
+
+.entity-img {
+	width: 100%;
+	height: 500px;
+}
+
+.entity-img-text {
+	color: #83be41; 
+	padding-bottom: 150px;
+	text-align: left;
+}
+
+.entity-img-text p {
+	font-size: 1.3em;
+	margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.entity-btn2 {
+	background-color: #83be41; 
+	border: none;
+}
+
+.entity-btn2:hover {
+	background-color: black; 
+}
+
+.video-title {
+	padding-top: 25px;
+	color: #83be41;
+	text-align: center;
+}
+
+.entity-video-container {
+	padding: 50px;
+	background-color: #f6f6f6;
+}
+
+.entity-video-container2 {
+	padding: 50px;
+}
+
+.entity-img-container {
+	background-color: #f6f6f6;
+}
+
+.entity-llcimg {
+	width: 100%;
+	height: 400px;
+}
+
+.entity-diffimg {
+	margin-top: 80px;
+	margin-left: -50px;
+}
+
+.entity-corpimg {
+	width: 100%;
+	height: 300px;
+	margin-top: 65px;
+}
+
+.entity-soleimg {
+	width: 100%;
+	height: 400px;
+	padding-top: 25px;
+}
+
+/*End of Entity Styles*/
+
+/*Start of Tax styles*/
+
+.tax-img-text {
+	color: #2381c4; 
+	padding-bottom: 150px;
+	text-align: left;
+}
+
+.tax-img-text p {
+	font-size: 1.3em;
+	margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.tax-btn2 {
+	background-color: #2381c4;
+	border: none;
+}
+
+.tax-btn2:hover {
+	background-color: black; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end of tax styles*/
+
+/*Start of credit styles*/
+
+.credit-img-text {
+	color: #f7941e; 
+	padding-bottom: 150px;
+	text-align: left;
+}
+
+.credit-img-text p {
+	font-size: 1.3em;
+	margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.credit-btn2 {
+	background-color: #f7941e;
+	border: none;
+}
+
+.credit-btn2:hover {
+	background-color: black; 
+}
+
+/*End of credit styles*/
+
+
+
+/*Start of review styles*/
+
+/*End of review styles*/
+
+
+/*Start of about styles*/
+
+/*End of about styles*/
+
+
+/*Start of contact styles*/
+
+.google-maps {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.card-styles {
+	background-color: #f6f6f6;
+}
+
+.maps-styles {
+	border: 1px solid #d7d7d7;
+	border-radius: 3px;
+}
+
+/*End of contact styles*/
+
+
+/*Start of terms styles*/
+
+.terms-page {
+	margin-top: 15px;
+}
+
+/*End of terms styles*/
+
+
+/*Start of privacy styles*/
+
+/*End of privacy styles*/
+
+
+/*Start of devise styles*/
+
+.login-style {
+	margin-top: 50px;
+}
+
+.inner-login-style {
+	background-color: #f6f6f6;
+}
+
+.auth-links a {
+	color: black;
+}
+
+.login-btn-style:hover {
+	background-color: black;
+}
+/*End of devise styles*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

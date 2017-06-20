@@ -1,0 +1,52 @@
+<div class="carousel-item active">
+  <img class="d-block img-fluid img1" src="<%= asset_path( 'entityimg1' ) %>" alt="First slide"/>
+    <div class="carousel-caption d-none d-block entity-img-text">
+			<h1>Entity Creation</h1>
+			<p>Our entity creation process is designed to properly address state specific requirements to make the process of proper set up as easy and accurate for each client as possible</p>
+			<a href="/contact" class="btn btn-primary btn-md entity-btn2" role="button" aria-disabled="true">Get Started Today</a>
+		</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 video-title">
+			<h2>LLC?  ...  S-Corp?  ...  Sole Proprietorship? </h2>
+		</div>
+	</div>
+<hr>
+	<div class="row">
+		<div class="col-md-8 entity-video-container">
+			<%= video_player src: { mp4: '/videos/Karma1.mp4' }, controls: true %>
+		</div>
+		<div class="col-md-4 entity-img-container">
+			<img src="<%= asset_path( 'entityllcimg' ) %>" class="entity-llcimg">
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="col-md-8 entity-video-container2">
+				<%= video_player src: { mp4: '/videos/Karma1.mp4' }, controls: true %>
+		</div>
+		<div class="col-md-4 entity-img-container2">
+			<img src="<%= asset_path( 'entitycorpimg' ) %>" class="entity-corpimg">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8 entity-video-container">
+			<%= video_player src: { mp4: '/videos/Karma1.mp4' }, controls: true %>
+		</div>
+		<div class="col-md-4 entity-img-container">
+			<img src="<%= asset_path( 'entitysoleimg' ) %>" class="entity-soleimg">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-8 entity-video-container2">
+			<%= video_player src: { mp4: '/videos/Karma1.mp4' }, controls: true %>
+		</div>
+		<div class="col-md-4 entity-img-container2">
+			<img src="<%= asset_path( 'entitydiffimg' ) %>" class="entity-diffimg">
+		</div>
+	</div>
+</div>
