@@ -13,10 +13,14 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   get 'contact', to: 'pages#contact'
+  
+  get 'estate', to: 'pages#estate'
 
   get 'terms', to: 'pages#terms'
 
   get 'privacy', to: 'pages#privacy'
+
+  get 'presentation', to: 'pages#presentation'
 
   root to: 'pages#home'
 

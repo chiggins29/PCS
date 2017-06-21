@@ -19,4 +19,7 @@ class PagesController < ApplicationController
 
   def reviews
   end
+
+  def estate
+  end
 end
