@@ -1,0 +1,12 @@
+  <table>
+  <tbody>
+    <% @consultations.each do |c| %>
+      <tr>
+        <td><%= c.first_name %></td>
+        <td><%= c.last_name %></td>
+        <td><%= c.number %></td>
+        <td><%= c.body %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

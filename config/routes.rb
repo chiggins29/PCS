@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :consultations
+
   devise_for :users, path: '', path_names: { sign_in: "login", sign_out: "logout", sign_up: "register"} 
 
   get 'entity', to: 'pages#entity'
@@ -21,6 +23,10 @@ Rails.application.routes.draw do
   get 'privacy', to: 'pages#privacy'
 
   get 'presentation', to: 'pages#presentation'
+
+  # get 'consultations', to: 'consultations#index'
+
+  # post 'consultations', to: 'consultations#index'
 
   root to: 'pages#home'
 

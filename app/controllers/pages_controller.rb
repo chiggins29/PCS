@@ -6,8 +6,9 @@ class PagesController < ApplicationController
   end
 
   def contact
-  end
+    @consultations = Consultation.new
 
+  end
   def entity
   end
 
