@@ -1,4 +1,6 @@
 class ConsultationsController < ApplicationController
+	access all: [:show, :index, :create, :new], admin: :all
+
 
 	def index
 		@consultations = Consultation.all
@@ -12,7 +14,7 @@ class ConsultationsController < ApplicationController
 		@consultation = Consultation.new(consultation_params)
 		respond_to do |format|
 			if @consultation.save
-				format.html { redirect_to contact_path, notice: "Consultation was submitted. Please expect a call in 24 hours."}
+				format.html { redirect_to contact_path, notice: "Consultation was submitted. Please expect a call within 24 hours."}
 			else
 				format.html { redirect_to contact_path}
 			end

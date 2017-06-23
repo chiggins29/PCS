@@ -1,12 +1,10 @@
-  <table>
-  <tbody>
-    <% @consultations.each do |c| %>
-      <tr>
-        <td><%= c.first_name %></td>
-        <td><%= c.last_name %></td>
-        <td><%= c.number %></td>
-        <td><%= c.body %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% @consultations.each do |c| %>
+	<div class="card admin-consultation">
+  	<div class="card-block">
+      <div class="card-title">Name: <%= c.first_name %> <%= c.last_name %></div>
+      <div class="card-title">Number: <%= c.number %></div>
+      <div class="card-title">Services wanted: <%= c.body %></div>
+      <div class="card-title">Inquired on: <%= c.created_at %></div>
+    </div> 
+  </div> 
+<% end %>
