@@ -1,5 +1,5 @@
 class ConsultationsController < ApplicationController
-	access all: [:show, :index, :create, :new], admin: :all
+	access all: [:create, :new], admin: :all
 
 
 	def index
