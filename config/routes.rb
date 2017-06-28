@@ -24,10 +24,6 @@ Rails.application.routes.draw do
 
   get 'presentation', to: 'pages#presentation'
 
-  # get 'consultations', to: 'consultations#index'
-
-  # post 'consultations', to: 'consultations#index'
-
   root to: 'pages#home'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

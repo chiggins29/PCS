@@ -1,9 +1,9 @@
 class ConsultationsController < ApplicationController
-	access all: [:create, :new], admin: :all
+	access all: [:create, :new, :show], admin: :all
 
 
 	def index
-		@consultations = Consultation.all
+		@consultations = Consultation.all.page(params[:page]).per(10)
 	end
 
 	def new
@@ -31,6 +31,11 @@ class ConsultationsController < ApplicationController
 	end
 
 	def destroy
+		@consultation = Consultation.find(params[:id])
+		@consultation.destroy
+		respond_to do |format|
+			format.html { redirect_to consultations_path, notice: "Consultation was successfully deleted"}
+		end
 	end
 
 	private

@@ -1,10 +1,12 @@
-<% @consultations.each do |c| %>
+<% @consultations.each do |consultation| %>
 	<div class="card admin-consultation">
   	<div class="card-block">
-      <div class="card-title">Name: <%= c.first_name %> <%= c.last_name %></div>
-      <div class="card-title">Number: <%= c.number %></div>
-      <div class="card-title">Services wanted: <%= c.body %></div>
-      <div class="card-title">Inquired on: <%= c.created_at %></div>
+      <div class="card-title">Name: <%= consultation.first_name %> <%= consultation.last_name %></div>
+      <div class="card-title">Number: <%= consultation.number %></div>
+      <div class="card-title">Services wanted: <%= consultation.body %></div>
+      <div class="card-title">Inquired on: <%= consultation.created_at %></div>
     </div> 
+    	<%= link_to "Delete", consultation, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:admin) %>
   </div> 
 <% end %>
+<%= paginate @consultations %>
