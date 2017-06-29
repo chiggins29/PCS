@@ -22,7 +22,12 @@ Rails.application.routes.draw do
 
   get 'privacy', to: 'pages#privacy'
 
-  get 'presentation', to: 'pages#presentation'
+  get 'entitypresentations', to: 'pages#entitypresentations'
+
+  get 'taxpresentations', to: 'pages#taxpresentations'
+
+  get 'estatepresentations', to: 'pages#estatepresentations'
+  
 
   root to: 'pages#home'
 

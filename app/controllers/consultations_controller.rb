@@ -1,4 +1,5 @@
 class ConsultationsController < ApplicationController
+
 	access all: [:create, :new, :show], admin: :all
 
 
@@ -43,5 +44,6 @@ class ConsultationsController < ApplicationController
 	def consultation_params
 		params.require(:consultation).permit(:first_name, :last_name, :number, :body)
 	end
+
 
 end

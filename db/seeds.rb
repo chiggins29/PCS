@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-100.times do |consultation|
+20.times do |consultation|
 	Consultation.create!(
 								first_name: "Cody",
 								last_name: "Higgins",
@@ -15,11 +15,12 @@
 								body: "This should create 100 consultations so I can test pagination",
 )
 end
+
  puts "100 Consultations was created"
 
 
 User.create!(
-	email: "cody@prime.com",
+	email: "admin@prime.com",
 	password: "Prime2017!",
 	password_confirmation: "Prime2017!",
 	roles: "admin",
@@ -28,9 +29,28 @@ User.create!(
  	puts "1 Admin user created"
 
 User.create!(
-	email: "sharde@prime.com",
+	email: "entity@prime.com",
 	password: "Prime2017!",
 	password_confirmation: "Prime2017!",
+	roles: "entity",
 )
 
-	puts " 1 Regular user created"
+ 	puts "1 Entity user created"
+
+ User.create!(
+	email: "tax@prime.com",
+	password: "Prime2017!",
+	password_confirmation: "Prime2017!",
+	roles: "tax",
+)
+
+ 	puts "1 Tax user created"
+
+ User.create!(
+	email: "estate@prime.com",
+	password: "Prime2017!",
+	password_confirmation: "Prime2017!",
+	roles: "estate",
+)
+
+ 	puts "1 Estate user created"
