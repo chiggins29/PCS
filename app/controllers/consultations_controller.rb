@@ -15,6 +15,7 @@ class ConsultationsController < ApplicationController
 		@consultation = Consultation.new(consultation_params)
 		respond_to do |format|
 			if @consultation.save
+				ConsultationMailer.lead_email(@consultation).deliver!
 				format.html { redirect_to contact_path, notice: "Consultation was submitted. Please expect a call within 24 hours."}
 			else
 				format.html { redirect_to contact_path}

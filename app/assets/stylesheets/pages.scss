@@ -172,50 +172,53 @@
 
 .video-title {
 	padding-top: 25px;
+	padding-bottom: 25px;
 	color: #83be41;
 	text-align: center;
+	background-color: #f6f6f6;
 }
 
 .main-container {
 	margin-bottom: 50px;
 }
 
-.main-container2 {
-	margin-bottom: 50px;
+.img-circle {
+  border-radius: 50%;
 }
 
-.entity-video-container {
-	padding: 50px;
+.entity-service-container-left {
+	text-align: center;
+	padding-right: 20px;
+}
+
+.entity-service-container-low {
+	text-align: center;
+	margin-top: 125px;
+	padding-bottom: 25px;
+}
+
+.entity-service-container-right {
+	text-align: center;
+	padding-left: 20px;
+}
+
+.entity-service-container-low:hover {
 	background-color: #f6f6f6;
-}
-
-
-.entity-img-container {
-	background-color: #f6f6f6;
-}
-
-.entity-llcimg {
-	width: 100%;
-	height: 400px;
-}
-
-.entity-diffimg {
-	margin-top: 80px;
-	margin-left: -50px;
-}
-
-.entity-corpimg {
-	width: 100%;
-	height: 300px;
-	margin-top: 65px;
-}
-
-.entity-soleimg {
-	width: 100%;
-	height: 400px;
+	margin-bottom: 75px;
 	padding-top: 25px;
 }
 
+.entity-service-container-right:hover{
+	background-color: #f6f6f6;
+	margin-bottom: 150px;
+	padding: 25px;
+}
+
+.entity-service-container-left:hover {
+	background-color: #f6f6f6;
+	margin-bottom: 150px;
+	padding: 25px;
+}
 /*End of Entity Styles*/
 
 /*Start of Tax styles*/
