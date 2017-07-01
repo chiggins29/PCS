@@ -65,6 +65,8 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     gritter (1.2.0)
@@ -137,7 +139,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (12.0.0)
-    rb-fsevent (0.9.8)
+    rb-fsevent (0.10.1)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     responders (2.4.0)
@@ -193,6 +195,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  font-awesome-sass
   gritter (= 1.2.0)
   jbuilder (~> 2.5)
   jquery-rails
