@@ -167,6 +167,10 @@
 
 /*Start of entity styles*/
 
+.entitypagebody {
+	background-color: #83be41;
+}
+
 .entity-img {
 	width: 100%;
 	height: 500px;
@@ -194,8 +198,8 @@
 }
 
 .entity-btn3 {
-	margin-bottom: 25px;
-	background-color: #83be41; 
+	margin-bottom: 45px;
+	background-color: black; 
 	border: none;
 }
 
@@ -203,8 +207,12 @@
 	justify-content: center;
 }
 
+.entity-btn-bottom a:hover {
+}
+
 .entity-btn3:hover {
-	background-color: black; 
+	background-color: #f6f6f6;
+	color: black;
 }
 
 .video-title {
@@ -218,17 +226,22 @@
 	margin-bottom: 50px;
 }
 
-.img-circle {
-  border-radius: 50%;
+.entity-icon-size {
+	font-size: 8.3em;
 }
 
 .entity-service-container-left {
 	text-align: center;
 	padding-right: 20px;
+	margin-bottom: 75px;
 }
 
 .entity-service-container-left h2 {
 	margin-top: 20px;
+}
+
+.entity-service-container-left p {
+	font-size: 1.2em;
 }
 
 .entity-service-container-low {
@@ -241,35 +254,56 @@
 	margin-top: 20px;
 }
 
+.entity-service-container-low p {
+	font-size: 1.2em;
+}
+
 .entity-service-container-right {
 	text-align: center;
 	padding-left: 20px;
+	margin-bottom: 75px;
 }
 
 .entity-service-container-right h2 {
 	margin-top: 20px;
 }
 
+.entity-service-container-right p {
+	font-size: 1.2em;
+}
+
 .entity-service-container-low:hover {
 	background-color: #f6f6f6;
 	margin-bottom: 75px;
 	padding-top: 25px;
+	border-radius: 10px;
 }
 
 .entity-service-container-right:hover{
 	background-color: #f6f6f6;
 	margin-bottom: 150px;
 	padding: 25px;
+	border-radius: 10px;
 }
 
 .entity-service-container-left:hover {
 	background-color: #f6f6f6;
 	margin-bottom: 150px;
 	padding: 25px;
+	border-radius: 10px;
+}
+
+.entity-padding-row {
+	padding-right: 75px;
+	padding-left: 75px;
 }
 /*End of Entity Styles*/
 
 /*Start of Tax styles*/
+
+.taxbody {
+	background-color: #2381c4;
+}
 
 .tax-img-text {
 	color: #2381c4; 
@@ -292,37 +326,31 @@
 	background-color: black; 
 }
 
+.tax-tow-information {
+	color: #2381c4;
+	text-align: center;
+	background-color: #f6f6f6;
+	padding: 50px;
+}
 
+.tax-text-styles {
+	margin: 50px;
+  padding: 50px;
+	background-color: #f6f6f6;
+}
 
+.tax-pic-styles {
+	text-align: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /*end of tax styles*/
 
 /*Start of credit styles*/
+
+.corpcreditbody {
+	background-color: #f7941e;
+}
 
 .credit-img-text {
 	color: #f7941e; 
@@ -345,12 +373,37 @@
 	background-color: black; 
 }
 
+.corp-credit-divtext {
+	color: #f7941e;
+	background-color: #f6f6f6;
+	padding: 50px;
+	text-align: center;
+}
+
+
+.corp-credit-cardimg-style {
+	height: 300px;
+}
+
+.corp-credit-mainrow-styles {
+	text-align: center;
+}
+
+.corp-credit-container-styles {
+	text-align: center;
+	padding: 50px;
+}
+
 /*End of credit styles*/
 
 
 
 
 /*Start of estate styles*/
+
+.estatebody {
+	background-color: black;
+}
 
 .estate-img {
 	width: 100%;
@@ -376,6 +429,45 @@
 
 .estate-btn2:hover {
 	background-color: #a6a6a6; 
+}
+
+.estate-page-text-title {
+	padding: 50px;
+	color: black;
+	text-align: center;
+	background-color: #f6f6f6;
+}
+
+.estate-container {
+	background-color: #f6f6f6;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.estate-pagetext {
+
+}
+
+.estate-pagetext1 {
+	padding-left: 50px;
+	text-align: center;
+}
+
+.estate-picpage-styles1 img {
+
+	width: 450px;
+ /*margin-left: -75px;*/
+}
+
+.estate-picpage-styles img {
+
+	width: 450px;
+ /*margin-left: -75px;*/
+}
+
+.main-estate-style-row {
+	text-align: center;
+	padding: 50px;
 }
 
 /*End of estate styles*/
