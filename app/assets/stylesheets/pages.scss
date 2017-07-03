@@ -478,6 +478,70 @@
 
 /*Start of review styles*/
 
+
+
+.review-container-style-entity {
+	text-align: center;
+	background-color: #2B82C0;
+	padding: 50px;
+}
+
+.entity-row-review-styles {
+	justify-content: center;
+}
+
+.entity-review-card-container-styles {
+	margin-top: 50px;
+}
+
+.card-container-styles {
+	margin: 0 auto;
+}
+
+.card-hover-entity:hover {
+	background-color: #84BC4A;
+}
+
+.review-container-style-tax {
+	text-align: center;
+	background-color: #F59332;
+	padding: 50px;
+}
+
+.tax-row-review-styles {
+
+}
+
+.tax-review-card-container-styles {
+	margin-top: 50px;
+}
+
+.card-hover-tax:hover {
+	background-color: #2B82C0;
+}
+
+.review-container-style-credit {
+	text-align: center;
+
+	background-color: #84BC4A;
+	padding: 50px;
+}
+
+.credit-row-review-styles {
+
+}
+
+.credit-review-card-container-styles {
+	margin-top: 50px;
+}
+
+.card-hover-credit:hover {
+	background-color: #F59332;
+}
+
+.review-pics {
+	width: 100%;
+}
 /*End of review styles*/
 
 
@@ -496,9 +560,14 @@
 /*Start of contact styles*/
 
 .google-maps {
+	background-color: black;
 	text-align: center;
 	margin-top: 25px;
 	margin-bottom: 25px;
+}
+
+.google-maps-row {
+	padding: 50px;
 }
 
 .card-styles {
@@ -508,6 +577,14 @@
 .maps-styles {
 	border: 1px solid #d7d7d7;
 	border-radius: 3px;
+	width: 488px;
+	height: 575px;
+}
+
+.row-consultation-styles {
+	background-color: black;
+	padding: 25px 75px 25px 75px;
+	margin-top: 50px;
 }
 
 .consultation-styles {
@@ -523,6 +600,7 @@
 .consultation-header {
 	padding-bottom: 15px;
 }
+
 
 /*End of contact styles*/
 
