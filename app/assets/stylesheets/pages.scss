@@ -326,6 +326,16 @@
 	background-color: black; 
 }
 
+.entity-btntax {
+	background-color: black;
+	border: none;
+}
+
+.entity-btntax:hover {
+	background-color: #2381c4;
+	color: black;
+}
+
 .tax-tow-information {
 	color: #2381c4;
 	text-align: center;
@@ -371,6 +381,17 @@
 
 .credit-btn2:hover {
 	background-color: black; 
+}
+
+.entity-btncredit {
+	margin-top: 50px;
+	background-color: black;
+	border: none;
+}
+
+.entity-btncredit:hover {
+	background-color: black;
+	color: #f7941e;
 }
 
 .corp-credit-divtext {
@@ -559,15 +580,20 @@
 
 /*Start of contact styles*/
 
+.contact-body {
+	background-color: #9A9A9D;
+}
+
 .google-maps {
-	background-color: black;
+
 	text-align: center;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
 }
 
 .google-maps-row {
-	padding: 50px;
+	
 }
 
 .card-styles {
@@ -582,8 +608,7 @@
 }
 
 .row-consultation-styles {
-	background-color: black;
-	padding: 25px 75px 25px 75px;
+
 	margin-top: 50px;
 }
 
