@@ -28,6 +28,8 @@ Rails.application.routes.draw do
 
   get 'estatepresentations', to: 'pages#estatepresentations'
   
+  get 'traders_investors', to: 'pages#traders_investors'
+  
 
   root to: 'pages#home'
 
