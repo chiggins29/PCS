@@ -329,7 +329,7 @@
 .entity-btntax {
 	background-color: black;
 	border: none;
-	margin-bottom: 25px;
+	margin-top: 25px;
 }
 
 .entity-btntax:hover {
@@ -403,15 +403,17 @@
 }
 
 .card-margin-credit-page {
-	margin-bottom: 25px;
+	margin: 0 auto;
 }
 
 .corp-credit-cardimg-style {
 	height: 300px;
 }
 
+.credit-page-margin {
+}
+
 .corp-credit-mainrow-styles {
-	text-align: center;
 }
 
 .corp-credit-container-styles {
@@ -481,24 +483,22 @@
 	margin-bottom: 50px;
 }
 
-.estate-pagetext {
-
+.estate-pagetext p {
+	font-size: 1.3em;
 }
 
-.estate-pagetext1 {
-	padding-left: 50px;
-	text-align: center;
+.estate-pagetext1 p {
+	font-size: 1.2em;
 }
 
 .estate-picpage-styles1 img {
-
-	width: 450px;
+	width: 500px;
  /*margin-left: -75px;*/
 }
 
 .estate-picpage-styles img {
-
-	width: 450px;
+	justify-content: right;
+	width: 500px;
  /*margin-left: -75px;*/
 }
 

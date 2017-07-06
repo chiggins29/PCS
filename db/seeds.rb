@@ -7,18 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-20.times do |consultation|
-	Consultation.create!(
-								first_name: "Cody",
-								last_name: "Higgins",
-								number: "9998887777",
-								body: "This should create 100 consultations so I can test pagination",
-)
-end
-
- puts "100 Consultations was created"
-
-
 User.create!(
 	email: "admin@prime.com",
 	password: "Prime2017!",
