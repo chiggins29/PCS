@@ -30,6 +30,9 @@ Rails.application.routes.draw do
   
   get 'traders_investors', to: 'pages#traders_investors'
   
+  get 'traders_investors_presentation', to: 'pages#traders_investors_presentation'
+
+  get 'sitemap', to: 'public#sitemap'
 
   root to: 'pages#home'
 

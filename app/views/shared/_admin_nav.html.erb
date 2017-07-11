@@ -11,6 +11,9 @@
         <a class="nav-link <%= active_link("/tax")%>" href="/taxpresentations">Tax Service</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link <%= active_link("/tax")%>" href="/traders_investors_presentation">Traders & Investors</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link <%= active_link("/estate")%>" href="/estatepresentations">Estate Planning</a>
       </li>
     </div>
@@ -18,9 +21,7 @@
   <li class="nav-item">
     <%= link_to "Consultations", consultations_path, class: "nav-link" %>
   </li> 
-<% end %>
-
-<% if logged_in?(:entity) %>
+<% elsif logged_in?(:entity) %>
   <div class="btn-group">
     <button class="btn btn-secondary btn-sm dropdown-toggle nav-link-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Presentations
@@ -30,10 +31,8 @@
         <a class="nav-link <%= active_link("/entity")%>" href="/entitypresentations">Entity Creation & Corporate Credit</a>
       </li>
     </div>
-  </div>  
-<% end %>
-
-<% if logged_in?(:tax) %>
+  </div> 
+<% elsif logged_in?(:tax) %>
   <div class="btn-group">
     <button class="btn btn-secondary btn-sm dropdown-toggle nav-link-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Presentations
@@ -43,10 +42,21 @@
         <a class="nav-link <%= active_link("/tax")%>" href="/taxpresentations">Tax Service</a>
       </li>
     </div>
-  </div>  
-<% end %>
+  </div> 
 
-<% if logged_in?(:estate) %>
+<% elsif logged_in?(:investors) %>
+  <div class="btn-group">
+    <button class="btn btn-secondary btn-sm dropdown-toggle nav-link-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Presentations
+    </button>
+    <div class="dropdown-menu  nav-item" aria-labelledby="dropdownMenuButton">
+      <li class="nav-item">
+        <a class="nav-link <%= active_link("/tax")%>" href="/traders_investors_presentation">Traders & Investors</a>
+      </li>
+    </div>
+  </div> 
+
+<% elsif logged_in?(:estate) %>
   <div class="btn-group">
     <button class="btn btn-secondary btn-sm dropdown-toggle nav-link-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Presentations
@@ -56,10 +66,7 @@
         <a class="nav-link <%= active_link("/estate")%>" href="/estatepresentations">Estate Planning</a>
       </li>
     </div>
-  </div>  
+  </div> 
+  <% else !logged_in? %>
 <% end %>
-
-
-
-
 

@@ -59,3 +59,4 @@ gem 'petergate'
 gem 'kaminari'
 gem 'font-awesome-sass'
 
+gem 'sitemap_generator'

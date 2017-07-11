@@ -35,6 +35,16 @@ User.create!(
  	puts "1 Tax user created"
 
  User.create!(
+	email: "investors@prime.com",
+	password: "Prime2017!",
+	password_confirmation: "Prime2017!",
+	roles: "investors",
+)
+
+ 	puts "1 Investors user created"
+
+
+ User.create!(
 	email: "estate@prime.com",
 	password: "Prime2017!",
 	password_confirmation: "Prime2017!",

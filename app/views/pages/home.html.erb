@@ -18,49 +18,16 @@
 </div>
 
 <div class="container tax-tips-main">
-    <div class="row">
-        <div class="col-md-3 tax-tips-text">
-        	<img src="https://s3-us-west-2.amazonaws.com/primecorpservices/taximg1.png" class="tax-tips-img-top">
-          <h3>Uncommon Knowledge</h3>
-          <p>You have to pay taxes. That's common knowledge you see at the store on your receipt. In many cases, you are double-taxed on the same assets. You don't have to be double-taxed on all your assets and that is uncommon knowledge. Here's a sample of the uncommon knowledge we have that will help you keep more of your money.</p>
-        </div>
-        <div class="col-md-3 tax-tips-text">
-          <h3>Tax Tip #1</h3>
-          <p>Do not keep property (other than a convenience bank account) in joint tenancy. Not with your spouse. Not with anyone else. (This is the most common tax-expensive error we see).</p>
-          <img src="https://s3-us-west-2.amazonaws.com/primecorpservices/taximg2.png" class="tax-tips-img-bottom">
-        </div>
-        <div class="col-md-3 tax-tips-text">
-        	<img src="https://s3-us-west-2.amazonaws.com/primecorpservices/taximg3.png" class="tax-tips-img-top2">
-          <h3>Tax Tip #2</h3>
-          <p>Do not put money in a pension or profit-sharing plan — IRA or other qualified plan — if you are in the highest income tax brackets (about 40 percent for most states, 35 percent for Florida residents) and highest estate tax bracket (55 percent). Qualified plans are double taxed with the tax collector getting up to 73 percent of your plan funds. That’s $730,000 per $1 million.</p>
-        </div>
-        <div class="col-md-3 tax-tips-text">
-          <h3>Tax Tip #3</h3>
-          <p>Do not be fooled. A will is not an estate plan. A revocable trust is not an estate plan. They are death documents. Your wealth transfer plan (if you want to legally beat the estate tax) must start now, while you are alive. Simply put, you need a comprehensive lifetime tax plan as part of your overall estate plan.</p>
-          <img src="https://s3-us-west-2.amazonaws.com/primecorpservices/taximg4.png" class="tax-tips-img-bottom">
-        </div>
-    </div>
+  <div class="row">
+    <%= render 'shared/taxtips' %>
+  </div>
 </div>
 
 
 <div class="container review-head">
-  <h1>Featured Customer Reviews</h1>
-  <hr>
-    <div class="row review-body">
-        <div class="col-md-4 review-hover">
-          <h3>David’s Review</h3>
-          <p>"They gave us easy-to-follow instructions and we were able to accomplish all items necessary to establish our business credit with companies that report to Dun & Bradstreet, which is an important part of a successful business plan. We would recommend Prime Corporate Services to anyone who is interested in developing a respected business credit rating."</p>
-        </div>
-
-        <div class="col-md-4 review-hover">
-          <h3>Natalie’s Review</h3>
-          <p>"This program has helped me begin the process of getting a separate credit score from my personal credit score which I had no idea how to do. Thank you!"</p>
-        </div>
-
-        <div class="col-md-4 review-hover">
-          <h3>JoAnn’s Review</h3>
-          <p>"Signing up for the Prime Corporate Services Business Credit Program is one of the best and wisest choices I have made! This program has been a success as it has (1) started me on my way to increased benefits for my company, (2) provided savings on my business tax return, and (3) enabled me to establish credibility and independence for my company."</p>
-        </div>
-    </div>
+  <h1>Featured Customer Reviews</h1><hr>
+  <div class="row review-body">
+    <%= render 'shared/reviewshome' %>
+  </div>
 </div>
 
