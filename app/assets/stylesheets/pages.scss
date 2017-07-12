@@ -159,6 +159,33 @@
 
 }
 
+.quote-btn1 {
+	margin-bottom: 25px;
+	border: none;
+  animation: colorchange 25s infinite; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 25s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+  0%   {background: #83be41;}
+  25%  {background: #2381c4;}
+  50%  {background: #f7941e;}
+  75%  {background: #FC4441;}
+  100%  {background: black;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #83be41;}
+  25%  {background: #2381c4;}
+  50%  {background: #f7941e;}
+  75%  {background: #FC4441;}
+  100%  {background: black;}
+
+}
+
 .tax-tips-main {
 	width: 100%;
 	background-color: #f6f6f6;
@@ -969,7 +996,154 @@
 }
 /*End of presentation page styles*/
 
+/*Individual entity slide text styles*/
 
+.entity-slide1 {
+	color: black;
+}
+
+.entity-slide1 h3 {
+	
+}
+
+.entity-slide1 p {
+	
+}
+
+
+
+.entity-slide2 {
+ color: black;
+ text-align: left;
+}
+
+.entity-slide2 h3 {
+
+}
+
+.entity-slide2 p {
+
+}
+
+
+
+.entity-slide3 {
+ color: black;
+}
+
+.entity-slide3 h3 {
+
+}
+
+.entity-slide3 p {
+
+}
+
+
+
+.entity-slide4 {
+ color: black;
+ text-align: left;
+}
+
+.entity-slide4 h3 {
+
+}
+
+.entity-slide4 p {
+
+}
+
+
+
+.entity-slide5 {
+ color: black;
+ text-align: left;
+}
+
+.entity-slide5 h3 {
+
+}
+
+.entity-slide5 p {
+
+}
+
+
+
+.entity-slide6 {
+ color: black;
+ text-align: left;
+}
+
+.entity-slide6 h3 {
+
+}
+
+.entity-slide6 p {
+
+}
+
+
+
+
+.entity-slide7 {
+ color: black;
+}
+
+.entity-slide7 h3 {
+
+}
+
+.entity-slide7 p {
+
+}
+
+
+
+
+.entity-slide8 {
+ color: black;
+}
+
+.entity-slide8 h3 {
+
+}
+
+.entity-slide8 p {
+
+}
+
+
+
+.entity-slide9 {
+ color: black;
+ text-align: left;
+}
+
+.entity-slide9 h3 {
+
+}
+
+.entity-slide9 p {
+
+}
+
+
+
+.entity-slide10 {
+ color: black;
+}
+
+.entity-slide10 h3 {
+
+}
+
+.entity-slide10 p {
+
+}
+
+/* End of Individual entity slide text styles*/
 
 
 
