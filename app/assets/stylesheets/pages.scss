@@ -997,24 +997,44 @@
 /*End of presentation page styles*/
 
 /*Individual entity slide text styles*/
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
 
 .entity-slide1 {
-	color: black;
+	margin-bottom: 65px;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	border-radius: 25px;
+	padding: 25px;
 }
 
-.entity-slide1 h3 {
-	
+.entity-slide1 h1 {
+		
 }
 
-.entity-slide1 p {
-	
+.entity-slide1 h2 {
+ margin-top: 75px;
+}
+
+.entity-slide1 h4 {
+	margin-top: 75px;
 }
 
 
 
 .entity-slide2 {
- color: black;
- text-align: left;
+ 	text-align: left;
+	margin-bottom: 175px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide2 h3 {
@@ -1028,7 +1048,11 @@
 
 
 .entity-slide3 {
- color: black;
+  text-align: left;
+	margin-bottom: 150px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide3 h3 {
@@ -1042,8 +1066,11 @@
 
 
 .entity-slide4 {
- color: black;
- text-align: left;
+	text-align: left;
+	margin-bottom: 125px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide4 h3 {
@@ -1057,8 +1084,11 @@
 
 
 .entity-slide5 {
- color: black;
- text-align: left;
+	text-align: left;
+	margin-bottom: 100px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide5 h3 {
@@ -1072,8 +1102,11 @@
 
 
 .entity-slide6 {
- color: black;
- text-align: left;
+	text-align: left;
+	margin-bottom: 125px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide6 h3 {
@@ -1088,7 +1121,11 @@
 
 
 .entity-slide7 {
- color: black;
+	text-align: left;
+	margin-bottom: 150px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide7 h3 {
@@ -1103,7 +1140,11 @@
 
 
 .entity-slide8 {
- color: black;
+	text-align: left;
+	margin-bottom: 100px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide8 h3 {
@@ -1117,8 +1158,11 @@
 
 
 .entity-slide9 {
- color: black;
- text-align: left;
+	text-align: left;
+	margin-bottom: 175px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide9 h3 {
@@ -1132,7 +1176,11 @@
 
 
 .entity-slide10 {
- color: black;
+	text-align: left;
+	margin-bottom: 225px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .entity-slide10 h3 {
@@ -1143,16 +1191,188 @@
 
 }
 
+
+
+.credit-slide1 {
+	color: black;
+	margin-bottom: 25px;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	padding: 25px;
+	border-radius: 25px;
+}
+
+.credit-slide1 h1 {
+	margin-bottom: 30px;
+	
+}
+
+.credit-slide1 h3 {
+	margin-top: 25px;
+}
+
+.credit-slide1 h5 {
+	margin-top: 25px;
+	
+}
+
+
+
+
+.credit-slide2 {
+	text-align: left;
+	margin-bottom: 150px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+
+.credit-slide3 {
+	text-align: left;
+	margin-bottom: 100px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+
+.credit-slide4 {
+	text-align: left;
+	margin-bottom: 75px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+
+}
+
+
+
+
 /* End of Individual entity slide text styles*/
 
+/*--------------------------------------------------------------------*/
+
+/*Start of tax slide text styles*/
+
+.tax-slides1 {
+	text-align: left;
+	margin-bottom: 75px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
 
 
 
 
 
+.tax-slides2 {
+		text-align: left;
+	margin-bottom: 200px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+
+.tax-slides3 {
+	text-align: left;
+	margin-bottom: 175px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
 
 
 
 
 
+.tax-slides4 {
+	text-align: left;
+	margin-bottom: 75px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+
+
+.estate-slides1 {
+	text-align: left;
+	margin-bottom: 175px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+.estate-slides2 {
+	text-align: left;
+	margin-bottom: 65px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+.estate-slides3 {
+	text-align: left;
+	margin-bottom: 175px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+.estate-slides4 {
+	text-align: left;
+	margin-bottom: 225px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+
+.trader-slides1 {
+	text-align: left;
+	margin-bottom: 65px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+.trader-slides2 {
+	text-align: left;
+	margin-bottom: 125px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+
+
+.trader-slides3 {
+	text-align: left;
+	margin-bottom: 95px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
+
+}
 
