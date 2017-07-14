@@ -57,6 +57,6 @@ gem 'video-js-rails'
 gem "gritter", "1.2.0"
 gem 'petergate'
 gem 'kaminari'
-gem 'font-awesome-sass'
+gem "font-awesome-rails"
 
 gem 'sitemap_generator'
