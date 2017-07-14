@@ -60,3 +60,5 @@ gem 'kaminari'
 gem "font-awesome-rails"
 
 gem 'sitemap_generator'
+
+gem 'rails_12factor', group: :production
