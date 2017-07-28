@@ -46,5 +46,4 @@ class ConsultationsController < ApplicationController
 		params.require(:consultation).permit(:first_name, :last_name, :email, :number, :body)
 	end
 
-
 end
