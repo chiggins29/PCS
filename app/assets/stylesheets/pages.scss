@@ -7,6 +7,29 @@
   overflow: hidden;
 }*/
 
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+  
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+  
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+    
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  
+  @if $fallback {
+    font-size: $fallback;
+  }
+  
+  font-size: $responsive;
+}
 
 .active {
 	position: relative;
@@ -31,6 +54,7 @@
 	background-color: rgba(0,0,0,0.6);
 	padding: 15px;
 	border-radius: 10px;
+	@include responsive-font(3vw, 10px, 25px);
 }
 
 .picture-text-entity p {
@@ -1397,4 +1421,7 @@
 	border-radius: 25px;
 
 }
+
+
+
 
