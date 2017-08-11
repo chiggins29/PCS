@@ -57,6 +57,10 @@
 	@include responsive-font(3vw, 10px, 20px);
 }
 
+.picture-text-entity h1 {
+	@include responsive-font(7vw, 20px, 40px);
+}
+
 .picture-text-entity p {
 	font-size: 1.3em;
 }
@@ -80,6 +84,10 @@
 	padding: 15px;
 	border-radius: 10px;
 	@include responsive-font(3vw, 10px, 20px);
+}
+
+.picture-text-tax h1 {
+	@include responsive-font(7vw, 20px, 40px);
 }
 
 .picture-text-tax p {
@@ -111,6 +119,10 @@
 	font-size: 1.3em;
 }
 
+.picture-text-corporate-credit h1 {
+	@include responsive-font(7vw, 20px, 40px);
+}
+
 .corporate-credit-btn {
 	background-color: #f7941e;
 	border: none;
@@ -128,6 +140,10 @@
 	padding: 15px;
 	border-radius: 10px;
 	@include responsive-font(3vw, 10px, 20px);
+}
+
+.picture-text-estate h1 {
+	@include responsive-font(7vw, 20px, 40px);
 }
 
 .picture-text-estate p {
@@ -162,6 +178,10 @@
 	padding: 15px;
 	border-radius: 10px;
 	@include responsive-font(3vw, 10px, 20px);
+}
+
+.traders-investors-picture-text h1 {
+	@include responsive-font(7vw, 20px, 40px);
 }
 
 .traders-investors-picture-text p {
