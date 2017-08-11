@@ -311,6 +311,7 @@
 	margin-bottom: 125px;
 	text-align: left;
 	background-color: rgba(0,0,0,.7);
+	border-radius: 10px;
 	padding: 25px;
 }
 
@@ -451,6 +452,7 @@
 	margin-bottom: 125px;
 	text-align: left;
 	background-color: rgba(0,0,0,.7);
+	border-radius: 10px;
 	padding: 25px;
 }
 
@@ -529,6 +531,7 @@
 	margin-bottom: 125px;
 	text-align: left;
 	background-color: rgba(0,0,0,.7);
+	border-radius: 10px;
 	padding: 25px;
 }
 
@@ -610,15 +613,23 @@
 }
 
 .estate-img-text {
-	color: black; 
-	padding-bottom: 150px;
+	color: white; 
+	margin-bottom: 125px;
 	text-align: left;
+	background-color: rgba(0,0,0,.7);
+	border-radius: 10px;
+	padding: 25px;
+}
+
+.estate-img-text h1 {
+	@include responsive-font(7vw, 20px, 40px);
 }
 
 .estate-img-text p {
 	font-size: 1.3em;
 	margin-top: 15px;
   margin-bottom: 15px;
+  @include responsive-font(3vw, 15px, 25px);
 }
 
 .estate-btn2 {
@@ -647,6 +658,10 @@
 	color: black;
 	text-align: center;
 	background-color: #f6f6f6;
+}
+
+.estate-page-text-title h2 {
+	@include responsive-font(5vw, 15px, 35px);
 }
 
 .estate-container {
@@ -689,14 +704,22 @@
 
 .traders-img-text {
 	color: #f6f6f6; 
-	padding-bottom: 125px;
+	margin-bottom: 125px;
 	text-align: left;
+	background-color: rgba(0,0,0,.7);
+	border-radius: 10px;
+	padding: 25px;
+}
+
+.traders-img-text h1 {
+	@include responsive-font(7vw, 20px, 40px);
 }
 
 .traders-img-text p {
 	font-size: 1.3em;
 	margin-top: 15px;
   margin-bottom: 15px;
+  @include responsive-font(3vw, 15px, 25px);
 }
 
 .traders-btn2 {
@@ -732,6 +755,10 @@
 	background-color: #f6f6f6;
 	padding: 50px;
 	text-align: center;
+}
+
+.traders-divtext h2 {
+	@include responsive-font(5vw, 15px, 35px);
 }
 
 .traders-text-columns {
