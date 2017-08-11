@@ -447,15 +447,22 @@
 }
 
 .tax-img-text {
-	color: #2381c4; 
-	padding-bottom: 150px;
+	color: #2381c4;
+	margin-bottom: 125px;
 	text-align: left;
+	background-color: rgba(0,0,0,.7);
+	padding: 25px;
 }
 
 .tax-img-text p {
 	font-size: 1.3em;
 	margin-top: 15px;
   margin-bottom: 15px;
+  @include responsive-font(3vw, 15px, 25px);
+}
+
+.tax-img-text h1 {
+	@include responsive-font(7vw, 20px, 40px);
 }
 
 .tax-btn2 {
@@ -483,6 +490,10 @@
 	text-align: center;
 	background-color: #f6f6f6;
 	padding: 50px;
+}
+
+.tax-tow-information h2 {
+	@include responsive-font(5vw, 15px, 35px);
 }
 
 .tax-center-content {
@@ -515,14 +526,21 @@
 
 .credit-img-text {
 	color: #f7941e; 
-	padding-bottom: 150px;
+	margin-bottom: 125px;
 	text-align: left;
+	background-color: rgba(0,0,0,.7);
+	padding: 25px;
+}
+
+.credit-img-text h1 {
+	@include responsive-font(7vw, 20px, 40px);
 }
 
 .credit-img-text p {
 	font-size: 1.3em;
 	margin-top: 15px;
   margin-bottom: 15px;
+  @include responsive-font(3vw, 15px, 25px);
 }
 
 .credit-btn2 {
@@ -550,6 +568,10 @@
 	background-color: #f6f6f6;
 	padding: 50px;
 	text-align: center;
+}
+
+.corp-credit-divtext h2 {
+	@include responsive-font(5vw, 15px, 35px);
 }
 
 .card-margin-credit-page {
