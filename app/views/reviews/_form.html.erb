@@ -1,0 +1,31 @@
+<div class="container review-form-container">
+	<div class="card inner-card-spacing-reviews">
+		<div class="card-block">
+			<%= form_for @review do |f| %>
+				<div class="review-field-styles">
+					<%= f.text_field :full_name, placeholder: "First & Last Name", class: "form-control" %>
+				</div>
+
+				<div class="review-field-styles">
+					<%= f.text_field :service_purchased, placeholder: "What service are we helping you with?", class: "form-control" %>
+				</div>
+
+				<div class="review-field-styles">
+					<%= f.text_area :body, placeholder: "Tell us about your experience!", class: "form-control" %>
+				</div>
+
+				<div class="review-field-styles">
+					<%= f.radio_button(:rating, 1) %> <%= f.label(:rating.to_s + "_1", "1 Star", class: "radio-btn") %> 
+				  <%= f.radio_button(:rating, 2) %> <%= f.label(:rating.to_s + "_2", "2 Stars", class: "radio-btn") %> 
+				  <%= f.radio_button(:rating, 3) %> <%= f.label(:rating.to_s + "_3", "3 Stars", class: "radio-btn") %> 
+				  <%= f.radio_button(:rating, 4) %> <%= f.label(:rating.to_s + "_4", "4 Stars", class: "radio-btn") %> 
+				  <%= f.radio_button(:rating, 5) %> <%= f.label(:rating.to_s + "_5", "5 Stars", class: "radio-btn") %>
+				</div>
+
+				<div>
+				  <%= f.submit "Submit", class: "btn btn-primary form-control" %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

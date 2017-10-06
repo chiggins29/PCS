@@ -803,10 +803,6 @@
 	margin: 0 auto;
 }
 
-/*.card-hover-entity:hover {
-	background-color: #84BC4A;
-}*/
-
 .review-container-style-tax {
 	text-align: center;
 	background-color: #F59332;
@@ -821,10 +817,6 @@
 	margin-top: 50px;
 }
 
-/*.card-hover-tax:hover {
-	background-color: #2B82C0;
-}*/
-
 .review-container-style-credit {
 	text-align: center;
 
@@ -832,23 +824,32 @@
 	padding: 50px;
 }
 
-.credit-row-review-styles {
-
-}
 
 .credit-review-card-container-styles {
 	margin-top: 50px;
 }
 
-/*.card-hover-credit:hover {
-	background-color: #F59332;
-}*/
-
 .review-pics {
 	width: 100%;
 }
+
 /*End of review styles*/
 
+/*Start of new review styles!!!!!*/
+
+.review-form-container {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.inner-card-spacing-reviews {
+	padding: 25px;
+}
+
+.review-field-styles {
+	margin-bottom: 25px;
+}
+/*End of new review styles!!!*/
 
 
 

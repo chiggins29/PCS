@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   
+  resources :reviews do
+    member do
+      get :toggle_status
+    end
+  end
+
   resources :consultations
 
   devise_for :users, path: '', path_names: { sign_in: "login", sign_out: "logout", sign_up: "register"} 
@@ -9,8 +15,6 @@ Rails.application.routes.draw do
   get 'tax', to: 'pages#tax'
 
   get 'corporate-credit', to: 'pages#corporate'
-
-  get 'reviews', to: 'pages#reviews'
 
   get 'about', to: 'pages#about'
 
