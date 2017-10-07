@@ -1,16 +1,25 @@
-<div class="container">
-	<div class="card">
-		<div class="card-block">
-		<%= paginate @reviews %>
-			<% @reviews.each do |review| %>
-				<h2 class="card-title"><%= link_to review.full_name, review_path(review.id) %></h2><hr>
-				<h4>Service: <%= review.service_purchased %></h4>
-				<p><%= review.body %></p>
-				<h5>Rating: <%= review.rating %> Out Of 5<h5>
-				<%= link_to review.status, toggle_status_review_path(review) %>
-			<% end %>	
-		<%= paginate @reviews %>
+<body class="index-body">
+	<div class="container">
+		<div class="average-rating">
+			<h1>Average Customer Rating:</h1> <%= render_stars(round_point5(no_of_stars)) %>
+			<h4>Here at Prime Corporate Services we care deeply about your positive feedback! Click the button below and leave a review!</h4>
+		</div>
+		<div class="leave-review-button-container1">
+			<%= link_to "Leave A Review", new_review_path, class: "btn btn-lg btn-primary leave-review-button" %>
+		</div>
+		<% @reviews.each do |review| %>	
+			<div class="card review-card-styles">
+				<div class="card-block">
+						<h2><%= link_to review.full_name, review_path(review.id) %></h2><hr>
+						<h4>Service: <%= review.service_purchased %></h4><hr>
+						<p><%= review.body.truncate(100) %> <%= link_to "Read More", review_path(review.id) %></p>
+						<h3 class="rating-style-in-cards1">Rating:</h3> <h5 class="rating-style-in-cards2"><%= customer_star_rating(review.rating) %></h5>
+						<%= link_to review.status, toggle_status_review_path(review), class: "btn btn-sm btn-primary" if logged_in?(:admin) %>
+				</div>
+			</div>
+		<% end %>
+		<div class="leave-review-button-container2">
+			<%= link_to "Leave A Review", new_review_path, class: "btn btn-lg btn-primary leave-review-button-bottom" %>
 		</div>
 	</div>
-	<%= link_to "Leave A Review", new_review_path, class: "btn btn-primary" %>
-</div>
+</body>

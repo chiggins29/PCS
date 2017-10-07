@@ -17,4 +17,6 @@ module ApplicationHelper
       js add_gritter(notice, title: "Prime Corporate Services", sticky: false, image: :success, time: 2000)
     end
   end
+
+  
 end

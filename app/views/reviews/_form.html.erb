@@ -13,9 +13,9 @@
 				<div class="review-field-styles">
 					<%= f.text_area :body, placeholder: "Tell us about your experience!", class: "form-control" %>
 				</div>
-
-				<div class="review-field-styles">
-					<%= f.radio_button(:rating, 1) %> <%= f.label(:rating.to_s + "_1", "1 Star", class: "radio-btn") %> 
+				<div class="review-field-styles">  
+				<h5>Please Rate Our Service:</h5>
+					  <%= f.radio_button(:rating, 1) %> <%= f.label(:rating.to_s + "_1", "1 Star", class: "radio-btn") %> 
 				  <%= f.radio_button(:rating, 2) %> <%= f.label(:rating.to_s + "_2", "2 Stars", class: "radio-btn") %> 
 				  <%= f.radio_button(:rating, 3) %> <%= f.label(:rating.to_s + "_3", "3 Stars", class: "radio-btn") %> 
 				  <%= f.radio_button(:rating, 4) %> <%= f.label(:rating.to_s + "_4", "4 Stars", class: "radio-btn") %> 
@@ -23,7 +23,7 @@
 				</div>
 
 				<div>
-				  <%= f.submit "Submit", class: "btn btn-primary form-control" %>
+				  <%= f.submit "Submit", class: "btn btn-primary form-control form-btn-reviews" %>
 				</div>
 			<% end %>
 		</div>

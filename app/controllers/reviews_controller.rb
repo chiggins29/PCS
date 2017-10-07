@@ -5,11 +5,11 @@ class ReviewsController < ApplicationController
 
 	def index
 		if logged_in?(:admin)
-			@reviews = Review.all.page(params[:page]).per(5)
+			@reviews = Review.all
 		elsif
-			@reviews = Review.published.all.page(params[:page]).per(5)
-		end
+			@reviews = Review.published.all
 	end
+end
 
 	def new
 		@review = Review.new
