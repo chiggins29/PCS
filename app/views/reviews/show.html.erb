@@ -1,13 +1,28 @@
 <div class="showpage-body">
 	<div class="container show-page-review-container">
-		<div class="card review-card-styles-show">
-			<div class="card-block">
-				<h2><%= @review.full_name %>'s Review</h2><hr>
-				<h4>Service: <%= @review.service_purchased %></h4>
-				<p><%= @review.body %></p>
-				<h3 class="rating-style-in-cards1">Rating:</h3> <h5 class="rating-style-in-cards2"><%= customer_star_rating(@review.rating) %></h5>
-				<%= link_to "Delete Review", @review, method: :delete, data: {confirm: "Are you sure you want to delete this review?"}, class: "btn btn-sm btn-primary" if logged_in?(:admin) %>
-				<%= link_to "Back", reviews_path, class: "btn btn-sm btn-primary" %>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="card review-card-styles-show">
+					<div class="card-block">
+						<h2><%= @review.full_name %>'s Review</h2><hr>
+						<h4>Service: <%= @review.service_purchased %></h4>
+						<p><%= @review.body %></p>
+						<h3 class="rating-style-in-cards1">Rating:</h3> <h5 class="rating-style-in-cards2"><%= customer_star_rating(@review.rating) %></h5>
+						<%= link_to "Delete Review", @review, method: :delete, data: {confirm: "Are you sure you want to delete this review?"}, class: "btn btn-sm btn-primary" if logged_in?(:admin) %>
+						<%= link_to "Back", reviews_path, class: "btn btn-sm btn-primary" %>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card info-card-style-review-page-show">
+					<div class="card-block">
+						<h4>"We are not happy when you pay the IRS more than you have to, and you shouldn't be either" -PCS</h4>
+						<hr>
+						<h4>Like what you see? Schedule a consultation and see how we can help you!</h4>
+						<hr>
+						<a href="/contact" class="btn btn-primary reveiw-page-btn-consultations" role="button" aria-disabled="true">Get A Consultation Today!</a>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>

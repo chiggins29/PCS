@@ -3,7 +3,7 @@
 		<div class="card-block">
 			<%= form_for @review do |f| %>
 				<div class="review-field-styles">
-					<%= f.text_field :full_name, placeholder: "First & Last Name", class: "form-control" %>
+					<%= f.text_field :full_name, placeholder: "First Name & Last Initial", class: "form-control" %>
 				</div>
 
 				<div class="review-field-styles">
@@ -15,7 +15,7 @@
 				</div>
 				<div class="review-field-styles">  
 				<h5>Please Rate Our Service:</h5>
-					  <%= f.radio_button(:rating, 1) %> <%= f.label(:rating.to_s + "_1", "1 Star", class: "radio-btn") %> 
+					<%= f.radio_button(:rating, 1) %> <%= f.label(:rating.to_s + "_1", "1 Star", class: "radio-btn") %> 
 				  <%= f.radio_button(:rating, 2) %> <%= f.label(:rating.to_s + "_2", "2 Stars", class: "radio-btn") %> 
 				  <%= f.radio_button(:rating, 3) %> <%= f.label(:rating.to_s + "_3", "3 Stars", class: "radio-btn") %> 
 				  <%= f.radio_button(:rating, 4) %> <%= f.label(:rating.to_s + "_4", "4 Stars", class: "radio-btn") %> 

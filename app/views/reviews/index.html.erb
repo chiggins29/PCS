@@ -7,19 +7,42 @@
 		<div class="leave-review-button-container1">
 			<%= link_to "Leave A Review", new_review_path, class: "btn btn-lg btn-primary leave-review-button" %>
 		</div>
-		<% @reviews.each do |review| %>	
+	</div>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-8">
+		<% @reviews.each do |review| %>
 			<div class="card review-card-styles">
 				<div class="card-block">
-						<h2><%= link_to review.full_name, review_path(review.id) %></h2><hr>
-						<h4>Service: <%= review.service_purchased %></h4><hr>
-						<p><%= review.body.truncate(100) %> <%= link_to "Read More", review_path(review.id) %></p>
+						<h2><%= link_to review.full_name.upcase, review_path(review.id) %></h2><h5>Published: <%= distance_of_time_in_words(review.created_at, Time.now) %> ago</h5><hr>
+						<h4>Service: <%= review.service_purchased %></h4>
+						<p><strong><%= review.body.truncate(100) %></strong> <%= link_to "Read More", review_path(review.id) %></p>
 						<h3 class="rating-style-in-cards1">Rating:</h3> <h5 class="rating-style-in-cards2"><%= customer_star_rating(review.rating) %></h5>
 						<%= link_to review.status, toggle_status_review_path(review), class: "btn btn-sm btn-primary" if logged_in?(:admin) %>
 				</div>
 			</div>
 		<% end %>
-		<div class="leave-review-button-container2">
-			<%= link_to "Leave A Review", new_review_path, class: "btn btn-lg btn-primary leave-review-button-bottom" %>
-		</div>
 	</div>
+
+	<div class="col-md-4">
+		<div class="card info-card-style-review-page">
+			<div class="card-block">
+				<h4>Our dedicated staff works year-round to ensure that you receive the very best advice and service. We know and understand the strategies successful entrepreneurs follow and we take that knowledge and tailor it to work for your business along with your personal goals. We have help 10’s of thousands of clients with entity creation, taxes, and business credit, striving to be the easiest, most accurate, company to work with.</h4>
+				<hr>
+				<h4>"We are not happy when you pay the IRS more than you have to, and you shouldn't be either" -PCS</h4>
+				<hr>
+				<h4>Like what you see? Schedule a consultation and see how we can help you!</h4>
+				<a href="/contact" class="btn btn-primary reveiw-page-btn-consultations" role="button" aria-disabled="true">Get A Consultation Today!</a>
+			</div>
+		</div>	
+	</div>
+</div>
+</div>
+
+<div class="container">
+	<div class="leave-review-button-container2">
+		<%= link_to "Leave A Review", new_review_path, class: "btn btn-lg btn-primary leave-review-button-bottom" %>
+	</div>
+</div>	
 </body>
