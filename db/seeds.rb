@@ -103,7 +103,7 @@ User.create!(
 
   puts "1 Review Created"
 
- Review.create!(full_name: "Sondra G.", service_purchased: "Entity Setup", body: "I have a small business now, and didn't know ninety percent of what was taught to me. I have to say, the step by step guidance as been easy to follow and doable", rating: 5, status: 1)
+ Review.create!(full_name: "Sondra G.", service_purchased: "Entity Setup", body: "I have a small business now, and didn't know ninety percent of what was taught to me. I have to say, the step by step guidance as been easy to follow and doable.", rating: 5, status: 1)
 
   puts "1 Review Created"
 
