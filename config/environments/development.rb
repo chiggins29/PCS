@@ -35,7 +35,6 @@ config.action_mailer.smtp_settings = {
  :user_name            => 'primecorp2017@gmail.com',
  :password             => 'Primecorp2012@',
  :authentication       => "plain",
- # :enable_starttls_auto => true
 }
 
 

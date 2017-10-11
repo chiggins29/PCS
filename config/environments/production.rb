@@ -65,7 +65,6 @@ Rails.application.configure do
    :user_name            => 'primecorp2017@gmail.com',
    :password             => 'Primecorp2012@',
    :authentication       => "plain",
-   # :enable_starttls_auto => true
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
