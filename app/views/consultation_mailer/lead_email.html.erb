@@ -4,10 +4,10 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h3><%= @consultation.first_name %> - <%= @consultation.last_name %></h3>
-    <p><%= @consultation.email %></p>
-    <p><%= @consultation.number %></p>
-    <p><%= @consultation.body %></p>
-    <p><%= @consultation.created_at %></p>
+    <h3>Name: <%= @consultation.first_name %> - <%= @consultation.last_name %></h3>
+    <p>Email: <%= @consultation.email %></p>
+    <p>Number: <%= @consultation.number %></p>
+    <p>Request: <%= @consultation.body %></p>
+    <p>Submitted at: <%= @consultation.created_at %></p>
   </body>
 </html>
