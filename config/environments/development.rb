@@ -33,9 +33,9 @@ config.action_mailer.smtp_settings = {
  :address              => "smtp.gmail.com",
  :port                 => 587,
  :user_name            => 'primecorp2017@gmail.com',
- :password             => 'Prime2017!',
+ :password             => 'Primecorp2012@',
  :authentication       => "plain",
- :enable_starttls_auto => true
+ # :enable_starttls_auto => true
 }
 
 
