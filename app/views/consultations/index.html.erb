@@ -7,7 +7,7 @@
       <div class="card-title">Services wanted: <%= consultation.body %></div>
       <div class="card-title">Inquired on: <%= consultation.created_at %></div>
     </div>
-    	<%= link_to "Delete", consultation, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:admin) %>
+    	<%= link_to "Delete", consultation, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-primary"  if logged_in?(:admin) %>
   </div> 
 <% end %>
 <%= paginate @consultations %>
