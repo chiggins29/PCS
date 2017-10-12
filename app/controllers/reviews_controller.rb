@@ -59,6 +59,6 @@ end
 	end
 
 	def review_params
-		params.require(:review).permit(:full_name, :service_purchased, :body, :rating)
+		params.require(:review).permit(:full_name, :service_purchased, :body, :rating, :email)
 	end
 end
