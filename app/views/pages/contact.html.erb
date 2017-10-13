@@ -1,36 +1,45 @@
 <body class="contact-body">
-	<div class="container row-consultation-styles">
-		<div class="row">
-			<div class="col-md-12 consultation-styles">
-				<h2 class="consultation-header">SCHEDULE YOUR CONSULTATION</h2>
-				<%= render "consultations/form" %>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+		  <img class="d-block img-responsive img1" src="https://s3-us-west-2.amazonaws.com/primecorpservices/contact.jpg" alt="Second slide">
+		  <div class="carousel-caption d-none d-block picture-text-contact">
+				<h1>Speak one on one with an expert about your business setup!</h1>
+				<p>We want to understand exactly what you need! There is no one size fits all when we are talking about the future of your business. Submit a consultation and speak with one of our experts to see just how we can help you!</p>
 			</div>
-		</div>	
-	</div>
-	<div class="container google-maps">
-		<div class="row google-maps-row">
-			<div class="col-md-6">
-		    <div class="card card-styles">
-		      <div class="card-block">
-		        <h3 class="card-title">Hours of Operation</h3>
-		        <hr>
-		        <p class="card-text">Monday-Friday - 8:00am MST - 8:00pm MST</p>
-		        <p class="card-text">Feel free to contact us at the email or phone number to the right. Please expect a call within 24 hours!</p>
-		      </div>
-		    </div>
+		</div>
+		<div class="container row-consultation-styles">
+			<div class="row">
+			<div class="col-md-1"></div>
+				<div class="col-md-10 consultation-styles">
+					<h2 class="consultation-header">SCHEDULE YOUR CONSULTATION</h2>
+					<%= render "consultations/form" %>
+				</div>
+				<div class="col-md-1"></div>
 			</div>
-			<div class="col-md-6">
-				<div class="card card-styles">
-					<div class="card-block">
-			      <h3 class="card-title">Contact Information</h3>
-			      <hr>
-			      <p class="card-text">Toll Free Number: 1-855-577-4639</p>
-			      <p class="card-text">Local Number: (801) 987-9680</p>
-			      <p class="card-text">Fax: (801) 207-8547</p>
-			      <p class="card-text">Email: support@primecorporateservices.com</p>
+		</div>
+		<div class="container google-maps">
+			<div class="row google-maps-row">
+			<div class="col-md-2"></div>
+				<div class="col-md-8">
+			    <div class="card card-styles">
+			      <div class="card-block">
+			        <h3 class="card-title">Hours of operation</h3>
+			        <hr>
+			        <p class="card-text">Monday-Friday - 8:00am MST - 8:00pm MST</p>
+			        <p class="card-text">Feel free to contact us at the email or phone number to the right. Please expect a call within 24 hours!</p>
+			        <hr>
+			        <h3 class="card-title">Contact Information</h3>
+				      <p class="card-text">Toll Free Number: 1-855-577-4639</p>
+				      <p class="card-text">Local Number: (801) 987-9680</p>
+				      <p class="card-text">Fax: (801) 207-8547</p>
+				      <p class="card-text">Email: support@primecorporateservices.com</p>
+			      </div>
 			    </div>
-			  </div>
+				</div>
+				<div class="col-md-2">
 			</div>
 		</div>
 	</div>
+</div>
 </body>

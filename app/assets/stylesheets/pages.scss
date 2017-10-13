@@ -75,7 +75,22 @@
 	color: #83be41;
 }
 
+.picture-text-contact {
+	color: black; 
+	margin-bottom: 50px;
+	background-color: rgba(148,148,150,0.9);
+	padding: 15px;
+	border-radius: 10px;
+	@include responsive-font(3vw, 10px, 20px);
+}
 
+.picture-text-contact h1 {
+	@include responsive-font(7vw, 20px, 40px);
+}
+
+.picture-text-contact p {
+	font-size: 1.3em;
+}
 
 .picture-text-tax {
 	color: #2CAFE3; 
@@ -942,7 +957,7 @@
 /*Start of contact styles*/
 
 .contact-body {
-	background-color: #9A9A9D;
+	background-color: #9E9EA0;
 }
 
 .google-maps {
