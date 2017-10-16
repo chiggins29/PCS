@@ -29,7 +29,7 @@ end
 		respond_to do |format|
 			if @review.save
 				ReviewMailer.review_email(@review).deliver!
-				format.html { redirect_to reviews_path, notice: "Your review has been submitted and will post to the main page within 48 hours!"}
+				format.html { redirect_to reviews_path, notice: "Your review has been submitted and will be reviewed within 48 hours!"}
 			else
 				format.html { redirect_to new_review_path, notice: "Your review failed to submit, please try again!"}
 			end
