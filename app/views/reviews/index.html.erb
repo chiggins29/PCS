@@ -16,8 +16,8 @@
 			<div class="card review-card-styles">
 				<div class="card-block">
 						<h2><%= link_to review.full_name.upcase, review_path(review.id) %></h2><h5>Published: <%= distance_of_time_in_words(review.created_at, Time.now) %> ago</h5><hr>
-						<h4>Service: <%= review.service_purchased %></h4>
-						<p><strong><%= review.body.truncate_words(25) %></strong> <%= link_to "Read More", review_path(review.id) %></p>
+						<h3>Service: <%= review.service_purchased %></h3>
+						<div class="review-card-scroll"><%= review.body %></div>
 						<h3 class="rating-style-in-cards1">Rating:</h3> <h5 class="rating-style-in-cards2"><%= customer_star_rating(review.rating) %></h5>
 						<%= link_to review.status, toggle_status_review_path(review), class: "btn btn-sm btn-primary" if logged_in?(:admin) %>
 				</div>

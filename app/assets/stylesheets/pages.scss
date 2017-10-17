@@ -859,7 +859,13 @@
 	margin-top: 10px;
 	border-radius: 10px;
 	border: 1px solid grey;
+	font-size: 1.3em;
 
+}
+
+.review-card-scroll {
+	height: 125px;
+	overflow-y: scroll;
 }
 
 .leave-review-button {
