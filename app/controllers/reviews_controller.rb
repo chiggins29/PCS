@@ -23,6 +23,21 @@ end
 		end
 	end
 
+	def edit
+		@review = Review.find(params[:id])
+	end
+
+	def update
+		@review = Review.find(params[:id])
+		respond_to do |format|
+      if @review.update(review_params)
+        format.html { redirect_to reviews_path, notice: 'The review was successfully updated' }
+      else
+        format.html { render :edit }
+      end
+    end
+	end
+
 	def create
 		@review = Review.new(review_params)
 
