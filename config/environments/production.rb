@@ -63,7 +63,7 @@ Rails.application.configure do
    :address              => "smtp.gmail.com",
    :port                 => 587,
    :user_name            => 'primecorp2017@gmail.com',
-   :password             => 'Primecorp2012@',
+   :password             => 'Prime2017@',
    :authentication       => "plain",
   }
 
