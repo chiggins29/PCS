@@ -1,5 +1,5 @@
 class ConsultationMailer < ApplicationMailer
-  default from: 'primecorp2017@gmail.com'
+  default from: 'leads@primecorporateservices.com'
  
   def lead_email(consultation)
     @consultation = consultation

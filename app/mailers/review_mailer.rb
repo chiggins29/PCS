@@ -1,5 +1,5 @@
 class ReviewMailer < ApplicationMailer
-  default from: 'primecorp2017@gmail.com'
+  default from: 'leads@primecorporateservices.com'
  
   def review_email(review)
     @review = review
