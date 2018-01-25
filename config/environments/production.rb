@@ -60,11 +60,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
-   :address              => "smtp.gmail.com",
+   :address              => "smtp.office365.com",
    :port                 => 587,
-   :user_name            => 'primecorp2017@gmail.com',
-   :password             => 'Prime2018!',
-   :authentication       => "plain",
+   :user_name            => 'leads@primecorporateservices.com',
+   :password             => 'L3@d$2017',
+   :authentication       => "login",
    :enable_starttls_auto => true
   }
 
