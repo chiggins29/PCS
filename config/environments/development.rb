@@ -26,7 +26,7 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-
+config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 config.action_mailer.delivery_method = :smtp
 # SMTP settings for gmail
 config.action_mailer.smtp_settings = {
@@ -34,10 +34,9 @@ config.action_mailer.smtp_settings = {
  :port                 => 587,
  :user_name            => ENV['USERNAME'],
  :password             => ENV['PASSWORD'],
- :authentication       => "login",
+ :authentication       => :login,
  :enable_starttls_auto => true
 }
-
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
