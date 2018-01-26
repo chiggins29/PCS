@@ -32,8 +32,8 @@ config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
  :address              => "smtp.office365.com",
  :port                 => 587,
- :user_name            => 'leads@primecorporateservices.com',
- :password             => 'L3@d$2017',
+ :user_name            => ENV['USERNAME'],
+ :password             => ENV['PASSWORD'],
  :authentication       => "login",
  :enable_starttls_auto => true
 }
